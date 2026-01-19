@@ -12,20 +12,19 @@ A comprehensive solution to automatically monitor competitor e-commerce websites
 
 ## 📑 Table of Contents
 
-- [Overview](#overview)
-- [Screenshots](#screenshots)
-- [Features](#features)
-- [Database Schema](#database-schema)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Testing](#testing)
-- [Academic Context](#academic-context)
-- [Legal Considerations](#legal-considerations)
-- [Future Roadmap](#future-roadmap)
-
+- [Overview](#-overview)
+- [Screenshots](#-screenshots)
+- [Features](#-features)
+- [Database Schema](#️-database-schema)
+- [Technologies](#️-technologies)
+- [Installation](#-installation)
+- [Configuration](#️-configuration)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Testing](#-testing)
+- [Academic Context](#-academic-context)
+- [Legal Considerations](#-legal-considerations)
+- [Future Roadmap](#️-future-roadmap)
 
 ---
 
@@ -40,11 +39,9 @@ A comprehensive solution to automatically monitor competitor e-commerce websites
 - 💰 **Pricing Optimization** : Receive alerts on price changes
 - 🎯 **Business Intelligence** : Analyze market trends
 
-
 ---
 
 ## 📸 Screenshots
-
 
 <table width="100%">
   <tr>
@@ -259,8 +256,6 @@ DB_PORT=5432
 
 ```
 
-
-
 ### Migrations
 
 ```bash
@@ -442,7 +437,6 @@ python manage.py test_price_change competitor-uuid
 ```bash
 python manage.py test
 ```
-
 
 ## 🎓 Academic Context
 
