@@ -6,22 +6,25 @@
 > **Intelligent web application for competitive monitoring with AI analysis**
 
 A comprehensive solution to automatically monitor competitor e-commerce websites, detect price changes and new products using artificial intelligence.
-<img src="docs/screenshots/landing_page.png" style="height:256px;margin-right:256px"/>
+<img src="docs/screenshots/landing_page.png" style="height:512px;margin-right:512px"/>
 
 ---
 
 ## 📑 Table of Contents
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Technologies](#-technologies)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Testing](#-testing)
-- [Screenshots](#-screenshots)
+- [Overview](#overview)
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Database Schema](#database-schema)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
+- [Academic Context](#academic-context)
+- [Legal Considerations](#legal-considerations)
+- [Future Roadmap](#future-roadmap)
 
 
 ---
@@ -36,6 +39,45 @@ A comprehensive solution to automatically monitor competitor e-commerce websites
 - 📈 **Strategic Intelligence** : Detect new product launches
 - 💰 **Pricing Optimization** : Receive alerts on price changes
 - 🎯 **Business Intelligence** : Analyze market trends
+
+
+---
+
+## 📸 Screenshots
+
+
+<table width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <h3>Login Page</h3>
+      <img src="docs/screenshots/login.png" alt="Login Page" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
+    </td>
+    <td align="center" width="50%">
+      <h3>Client Dashboard</h3>
+      <img src="docs/screenshots/dashboard_client.png" alt="Client Dashboard" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <h3>Competitor List</h3>
+      <img src="docs/screenshots/competitor_list.png" alt="Competitor List" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
+    </td>
+    <td align="center" width="50%">
+      <h3>Product Detail</h3>
+      <img src="docs/screenshots/product_detail.png" alt="Product Detail" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <h3>Alerts List</h3>
+      <img src="docs/screenshots/alerts.png" alt="Alerts" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
+    </td>
+    <td align="center" width="50%">
+      <h3>Admin Dashboard</h3>
+      <img src="docs/screenshots/dashboard_admin.png" alt="Admin Dashboard" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -93,7 +135,7 @@ A comprehensive solution to automatically monitor competitor e-commerce websites
 
 ---
 
-## 🏗️ database_schema
+## 🏗️ Database Schema
 
 <img src="docs/screenshots/database_schema.png" style="height:256px;margin-right:256px"/>
 
@@ -141,13 +183,6 @@ A comprehensive solution to automatically monitor competitor e-commerce websites
 ---
 
 ## 📥 Installation
-
-### Prerequisites
-
-- **Python 3.10+**
-- **PostgreSQL 15+**
-- **Ollama** (for local LLM)
-- **Google Chrome** (for Selenium)
 
 ### Step 1: Clone the Project
 
@@ -222,19 +257,9 @@ DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
 
-# Django
-DEBUG=True
-SECRET_KEY=your-very-long-random-django-secret-key
-
-# Optional
-ALLOWED_HOSTS=localhost,127.0.0.1
 ```
 
-### Generate SECRET_KEY
 
-```bash
-python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
-```
 
 ### Migrations
 
@@ -418,44 +443,6 @@ python manage.py test_price_change competitor-uuid
 python manage.py test
 ```
 
----
-
-## 📸 Screenshots
-
-<table width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <h3>Login Page</h3>
-      <img src="docs/screenshots/login.png" alt="Login Page" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
-    </td>
-    <td align="center" width="50%">
-      <h3>Client Dashboard</h3>
-      <img src="docs/screenshots/dashboard_client.png" alt="Client Dashboard" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <h3>Competitor List</h3>
-      <img src="docs/screenshots/competitor_list.png" alt="Competitor List" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
-    </td>
-    <td align="center" width="50%">
-      <h3>Product Detail</h3>
-      <img src="docs/screenshots/product_detail.png" alt="Product Detail" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <h3>Alerts List</h3>
-      <img src="docs/screenshots/alerts.png" alt="Alerts" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
-    </td>
-    <td align="center" width="50%">
-      <h3>Admin Dashboard</h3>
-      <img src="docs/screenshots/dashboard_admin.png" alt="Admin Dashboard" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); border: 1px solid #e0e0e0;"/>
-    </td>
-  </tr>
-</table>
-
----
 
 ## 🎓 Academic Context
 
