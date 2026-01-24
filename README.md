@@ -6,7 +6,7 @@
 > **Intelligent web application for competitive monitoring with AI analysis**
 
 A comprehensive solution to automatically monitor competitor e-commerce websites, detect price changes and new products using artificial intelligence.
-<img src="docs/screenshots/landing_page.png" style="height:412px;margin-right:200px"/>
+<img src="docs/screenshots/landing_page.png" style="height:512px;margin-right:512px"/>
 
 ---
 
